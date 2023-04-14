@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- table.table.table-hover>thead>tr>th*3^^tbody>tr>td*3 -->
+
+    <table class="table table-hover" width="600px" height="400px">
+      <tbody>
+        <tr>
+          <td rowspan="3">1</td>
+          <td colspan="5">2</td>
+        </tr>
+        <tr>
+          <td colspan="2">8</td>
+
+          <td colspan="3">10</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>14</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td rowspan="2">20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>25</td>
+
+          <td rowspan="2">27</td>
+          <td>28</td>
+          <td rowspan="3" colspan="2">29</td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>32</td>
+
+          <td rowspan="2">34</td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td colspan="2">38</td>
+        </tr>
+        <tr>
+          <td colspan="6">43</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
