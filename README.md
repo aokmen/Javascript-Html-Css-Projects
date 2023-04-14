@@ -4,24 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href=' https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
-    <style>
-      table {
-        text-align: center;
-      }
-      tr {
-        background-color: rgba(199, 217, 238, 0.459);
-      }
-      .tek_satir {
-        background-color: whitesmoke;
-      }
     
-      table {
-         font-family: 'Handlee', arial, serif; 
-         font-size: 20px;
-    }
-    </style>
   </head>
   <body>
     <!-- style="background-color: rgb(178, 219, 238)"
