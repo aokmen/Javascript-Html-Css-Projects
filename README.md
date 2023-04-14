@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+   
   </head>
-     <body >
-  
-    
+  <body>
+    <!-- style="background-color: rgb(178, 219, 238)"
+    style="background-color: rgba(199, 217, 238, 0.459)"
+    style="background-color: rgba(199, 217, 238, 0.459)" -->
     <table class="table table-hover" width="550px" height="250px">
       <thead>
         <tr>
