@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=' https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <title>Document</title>
+    <style>
+        form {
+            background-color: #29C4D6;
+            border: 5px dashed #1e666e;
+            width: 300px;
+            margin: auto;
+            padding:50px 0 50px 20px;
+            font-family: 'Handlee', arial, serif; 
+            color: #0e3135;
+        }
+        label {
+        color: 1e666e;
+        font-size: large;  
+      
+      }
+
+     
+    </style>
+</head>
+<body>
+    <form action="" >
+        <label for="">USER FORM</label><br><br>
+        <label for="name">Username:</label><br>
+        <input type="text" placeholder="Your Name" id="name" name="name"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" placeholder="Your Password" id="password" name="password"><br><br>
+
+        <!-- <button type="submit">Gönder</button> -->
+        
+        <label for="email"> Email:</label><br>
+        <input type="email" placeholder="Your Email" id="email" name="email"><br><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="">Gender:</label><br>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male" >
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br><br>
+        <label for="">Hobbies:</label><br>
+        <label for="technology">Technology</label>
+        <input type="checkbox" id="technology" name="technology" >
+        <label for="music">Music</label>
+        <input type="checkbox" id="music" name="music">
+        <label for="art">Art</label>
+        <input type="checkbox" id="art" name="art"><br><br>
+        <label for="degree">Degree:</label>
+        <select name="degree" id="degree">
+            <option value="school">School</option>
+            <option value="highschool">High School</option>
+            <option value="uni">University</option>
+        </select>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <br><br>
+        <input type="reset" value="Reset">  
+        <input type="submit" value="Send"><br>
+
+
+    </form>
+</body>
+</html>
