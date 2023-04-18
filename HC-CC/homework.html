@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: rgb(40, 144, 192);
+            border: 5px solid rgb(15, 81, 112);
+            padding: 40px;
+            width:350px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .regist{
+            color: rgb(8, 25, 49);
+            font-size: x-large;
+        }
+        label{
+            color: rgb(4, 24, 33);
+        }
+    </style>
+</head>
+<body>
+    <form action="result.html">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center;"><br> <label for="" class="regist"> Registration Form</label><br></td>
+                
+            </tr>
+            <tr>
+                <td width="120"> <label for="Name"> Name:</label></td>
+                <td><input type="text" id="Name" name="Name"></td>
+            </tr>
+            <tr>
+                <td> <label for="Username"> Username:</label></td>
+                <td><input type="text" id="Username" name="Username"></td>
+            </tr>
+            <tr>
+                <td> <label for="password"> Password:</label></td>
+                <td> <input type="password" name="Password" id="password"> </td>
+            </tr>
+            <tr>
+                <td> <label for="age"> Age:</label></td>
+                <td><input type="number" id="age" name="Age"></td>
+            </tr>
+            <tr>
+                <td> <label for="email"> Email:</label></td>
+                <td> <input type="email" name="Email" id="email"> </td>
+            </tr>
+            <tr>
+                <td> <label for="phone"> Mobile:</label></td>
+                <td> <input type="tel" name="Phone" id="phone"> </td>
+            </tr>
+           
+            <tr>
+                <td> <label for="Birth"> Date of Birth:</label></td>
+                <td> <input type="date" name="Date of Birth" id="Birth" > </td>
+            </tr>
+            
+            <tr>
+                    <td><fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" name="Gender" id="male" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="Gender" id="female" value="Female">
+                        <label for="female">Female</label> </fieldset>
+                    </td>
+                    <td><fieldset>
+                        <legend>Free Days:</legend>
+                        <input type="checkbox" name="Free Days" id="saturday" value="Saturday">
+                    <label for="saturday">Saturday</label><br>
+                    <input type="checkbox" name="Free Days" id="sunday" value="Sunday">
+                    <label for="sunday">Sunday</label> </fieldset>
+                    </td>
+       
+            </tr>
+            
+           
+            <tr>
+                
+                <td><fieldset><legend>Fav Color:</legend>
+                
+                    <input type="color" name="Color" id="color" value="#123456">
+                </fieldset>
+                    
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Hobbies</legend>
+                        <select name="Hobbies" id="hobbies">
+                            <option value="Music">Music</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Read">Read</option>
+                        </select>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Your Image</legend>
+                        <input type="file" name="" id="">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Fav Sports</legend>
+                        <select name="" id="">
+                            <optgroup label="Sport">
+                                <option value="">Football</option>
+                                <option value="">Basketball</option>
+                                <option value="">Volayball</option>
+                            </optgroup>
+                        </select>
+                       
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Country</legend>
+                        <input type="text" list="Country" name="Country">
+                        <datalist id="Country"> 
+                            <option value="Germany"></option>
+                            <option value="Usa"></option>
+                            <option value="England"></option>
+                        </datalist>
+                       
+                            
+                       
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Comments"></textarea>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td colspan="2" style="text-align: center;"><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+       
+          
+    </form>
+</body>
+</html>
