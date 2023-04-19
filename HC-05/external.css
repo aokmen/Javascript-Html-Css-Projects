@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(30, 171, 227);
+  
+}
+
+body{
+    /* background-color: aqua;
+    border: 1px solid red; */
+}
+h1{
+    color: blue;
+}
+h1:hover{
+    /* color: blueviolet; */
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
