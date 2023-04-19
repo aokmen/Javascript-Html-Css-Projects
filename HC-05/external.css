@@ -9,10 +9,22 @@ body{
 }
 h1{
     color: blue;
+    
 }
 h1:hover{
     /* color: blueviolet; */
     opacity: 0.5;
     cursor: pointer;
-    
+
+}
+li{
+    list-style-type: none;
+}
+li:hover{
+    font-weight: 800;
+    cursor: pointer;
+    color: brown;
+}
+.list{
+    border: 1px solid orange;
 }

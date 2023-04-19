@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Internal</title>
+    <style>
+        img{
+            width:300px;
+            height:300px ;
+            border: 2px solid orangered;
+            border-radius: 50%;        
+        }
+        .img-div{
+            text-align: center;
+        }
+        #part{
+            background-color: aqua;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: justify;
+            font-weight:900;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+   * Inline CSS, HTML elementlerine style keyword'u ile eklenir.
+   * style kelimesinin ici aslinda CSS alanidir.
+   * Sadece eklenen element icin bir stillendirme gerceklestirir.
+   * Bu sebeple cok pratik bir yontem degildir.
+   * HTML kodlarini kalabaliklastirdigi icin kodun gorunumunu karmasiklastirir.
+ -->
+ <h1 style="color: red; text-align: center;">Using CSS</h1>
+ <p style="background-color: chocolate;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi architecto libero aspernatur itaque iste rerum. Enim autem, a beatae laboriosam praesentium animi odio! Molestias nostrum dolorem libero atque quaerat enim tempore, 
+ </p>
+ <div class="img-div">
+    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="">
+
+    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="">
+ </div>
+ <div id="part">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis id cum officia nulla tempore vitae alias amet odio velit nam quia dolore quibusdam aut temporibus dolorum obcaecati, ea autem.</p>
+
+ </div>
+
+</body>
+</html>
