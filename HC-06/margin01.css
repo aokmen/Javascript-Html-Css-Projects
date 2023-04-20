@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+
+body{
+    /* margin: 0; */
+}
+
+
+h1{
+    background-color: darkkhaki;
+    /* margin-bottom: 0; */
+    margin-top: 20px;
+}
+#par1{
+    background-color: chocolate;
+    box-sizing: border-box;
+    width: 200px;
+    /* height: 200px; */
+    margin: 20px auto;
+    /* margin-bottom: 0; */
+    padding: 20px;
+    border: 5px solid darkred;
+    /* text-align: justify; */
+}
+#par2{
+    background-color: rgb(42, 193, 193);
+    /* margin-top: 0; */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    margin: 20px 10px;
+}
+.container{
+    border: 2px solid blue;
+    margin: 20px;
+    background-color: bisque;
+}
+.nav{
+    border: 2px solid red;
+}
+.nav li{
+    /* background-color: bisque; */
+    display: inline;
+    margin-top: 50px;
+    /* border: 2px solid blue; */
+    padding: 15px;
+}
