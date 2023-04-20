@@ -1,5 +1,12 @@
+
+
 .container{
 
+}
+h1{
+    text-align: center;
+    margin-left: -40px;
+    color: white;
 }
 .in {
     display:inline-block;

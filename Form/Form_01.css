@@ -1,0 +1,46 @@
+*{
+    color:rgb(6, 49, 79);
+}
+.in{
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+form{
+    /* background: rgb(80,114,167);
+background: linear-gradient(323deg, rgba(80,114,167,1) 0%, rgba(80,167,128,1) 50%, rgba(31,48,94,1) 100%); */
+background-color: darkcyan;
+width: 400px;
+height: 700px;
+padding: 30px 0 30px 30px;
+border-radius: 30px;
+margin: auto;
+}
+.rows{
+    display: inline-block;
+    width: 150px;
+}
+.rows2{
+    display: inline-block;
+    width: 175px;
+}
+.file{
+    width: 330px;
+}
+.country{
+    width: 135px;
+}
+textarea{
+    resize: none;
+}
+input{
+    border-radius: 5px;
+    border:none;
+    height: 20px;
+    
+}
+h1{
+    text-align: center;
+    margin-left: -40px;
+    color: white;
+}
