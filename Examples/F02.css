@@ -1,0 +1,38 @@
+
+
+.container{
+
+}
+h1{
+    text-align: center;
+    margin-left: -40px;
+    color: white;
+}
+.in {
+    display:inline-block;
+    width: 150px;
+    margin-bottom: 10PX;
+}
+form{
+   margin: auto;
+    width: 400px;
+    height: 700px;
+    background-color: darkcyan;
+    padding: 30px 0 30px 30px;
+    border-radius: 30px;
+}
+.rows{
+    display:inline-block;
+    width: 150px;
+}
+.rows2{
+    display:inline-block;
+    width: 175px;
+}
+.file{
+    display:inline-block;
+    width: 330px;
+}
+.country{
+    width: 137px;
+}
