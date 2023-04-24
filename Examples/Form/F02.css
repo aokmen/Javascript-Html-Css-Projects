@@ -41,7 +41,6 @@ table {
     border-spacing: 2em 0.5em;
     padding: 0 2em 1em 0;
     border: 1px solid orange;
-    border-collapse: collapse;
   }
   
   td {
