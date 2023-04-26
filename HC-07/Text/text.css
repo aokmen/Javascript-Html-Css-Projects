@@ -1,0 +1,75 @@
+body{
+    /* background-color: coral; */
+    padding:0 10%;
+}
+
+a{  
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(36, 159, 230);
+    text-decoration: none;
+}
+a:link{
+    background-color: darkred;
+}
+a:active{
+    color: bisque;
+    background-color: darkcyan;
+}
+a:visited{
+    /* background-color: violet; */
+}
+a:hover{
+    background-color: coral;
+}
+
+
+h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, orange,blue,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    
+}
+.tcolor{
+    color: orangered;
+    /* color: transparent; */
+    background-color: bisque;
+    padding: 5%;
+}
+div{
+    width: 300px;
+    color: darkgray;
+}
+.alignment2{
+    text-align: justify;
+    color:  blueviolet ;
+}
+.decor{
+    text-decoration:  underline wavy red;
+    /* text-decoration-color: blueviolet; */
+    color: coral;
+}
+.trans{
+    text-transform: capitalize;
+    color: darkolivegreen;
+}
+.indent{
+    text-indent: 25px;
+    color: darkcyan;
+}
+.letter{
+    /* letter-spacing: 5px; */
+    word-spacing: 3rem;
+}
+.direct{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.line{
+   text-shadow: 3px 2px 3px gray;
+   font-size: 1em;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
