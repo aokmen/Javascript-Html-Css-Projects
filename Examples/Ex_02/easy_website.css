@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    background-image: url(./assets/image.png);
+    background-size: cover;
+    height: 100vh;
+}
+.nav{
+    text-align: right;
+}
+ul{
+    text-decoration: none;
+    margin-left: 30px;
+}
+li{
+    display: inline-block;
+    font-size: 0.7em;
+    margin-top: 30px;
+    padding: 10px; 
+}
+.text{
+    font-size: 5rem;
+    width: 30%;
+    padding: 100px;
+    font-weight: 600;
+    color: white;
+}
+.play{
+    display: inline;
+    height: 500px;
+    margin: auto 0;
+}
