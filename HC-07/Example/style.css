@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+a{
+    color:white;
+    text-decoration: none;
+    padding: 5px;
+    
+
+}
+a:hover{
+    background-color: #ff0078;
+    border-radius: 5px;
+}
+
+ul{
+    display: inline;
+}
+li{
+    display: inline-block;
+    padding: 5px;
+    font-family: 'Rubik Beastly', cursive;
+}
+main{
+    background-image: url(./background.jpg) ;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top:30%;
+    left:30%;
+    text-align: center;
+    color: white;
+}
+button{
+    margin-top: 5px;
+    background-color: #ff0078;
+    padding: 7px 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: #ff0078;
+    border:1px solid #ff0078;
+}
