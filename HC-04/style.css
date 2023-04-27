@@ -1,0 +1,24 @@
+table {
+    background-color: gray;
+    margin: 0 auto;
+}
+.title {
+    background-color: orange;
+}
+textarea{
+    resize:none;
+}
+.input1{
+    width: 93%;
+    padding: 20px 0 20px 20px;
+
+} 
+.table_title{
+    text-align: center;
+    padding-top: 30px;
+}
+label{
+    font-weight: 200;
+    font-size: 1em;
+    color: rgb(26, 2, 2);
+}
