@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./result.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title_h1">
+            <h1>NET<span>FLIX</span> </h1>
+            <h3>Thank you for signing up to Netflix.Tell me more about yourself.</h3>
+        </div>
+   
+    <form action="result.html">
+        <div>
+            <label for="">Name:</label><br>
+            <input type="text" class="inputtext" name="Name" placeholder="Enter your Name"><br><br>
+        </div>
+        <div>
+            <label for="">Age:</label><br>
+            <input type="text" class="inputtext" name="Age" placeholder="Enter your Age"><br><br>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" class="inputtext" name="Email" placeholder="Enter your Email"><br><br>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Content Type</legend>
+                <select name="Content Type" id="">
+                    <option value="Movies">Movies</option>
+                    <option value="Series" selected>Series</option>
+                </select>
+            </fieldset>   
+           
+        </div><br>
+
+        <div>
+            <fieldset>
+                <legend>Movie Type</legend>
+                <input type="checkbox" name="Movie Type" value="Comedy"><label for="">Comedy</label><br>
+                <input type="checkbox" name="Movie Type" value="Action"><label for="">Action</label><br>
+                <input type="checkbox" name="Movie Type" value="Romance"><label for="">Romance</label>
+               
+            </fieldset>   
+           
+        </div><br>
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="Gender" value="Male"><label for="">Male</label><br>
+                <input type="radio" name="Gender" value="Female"><label for="">Female</label><br>
+                <input type="radio" name="Gender" value="Other"><label for="">Other</label>
+               
+            </fieldset>   
+           
+        </div><br>
+        <div>
+            <label for="Feedback"></label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br><br>
+        <input type="submit" value="Send" id="submit1" >
+        <!-- <input type="reset" value="Reset"> -->
+    </form>
+</div>
+</body>
+</html>

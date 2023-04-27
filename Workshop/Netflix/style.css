@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./assets/netflix-background-image\ 1.jpg);
+    background-size: cover;
+    /* width: 1440px;
+    height: 1096px; */
+
+}
+fieldset{
+   width: 140px;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+
+   
+}
+form{
+    margin: 0 auto;
+    width: 300px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.inputtext{
+    width: 200px;
+    height: 36px;
+}
+h1{
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    letter-spacing: 2px;
+}
+.title_h1{
+    text-align: center;
+}
+span{
+    color: red;
+}
+h3{
+    color: white;
+}
+#submit1{
+    background-color: coral;
+    padding: 30px;
+}
