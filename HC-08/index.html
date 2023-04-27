@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1 id="title" >NET<span>FLIX</span></h1>
+            <h3 id="description">Thank you for signing up to Netflix.Tell me more about yourself.</h3>
+        </header>
+        <section id="survey-form-container">
+            <form action="result.html" method="get">
+
+                <div class="input-box">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="Name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="input-box">
+                    <label for="age">Age</label><br>
+                    <input type="number" name="Age" id="age" placeholder="Enter your Age">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="Email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="input-box">
+                    <label for="name">Content type</label><br>
+                    <select name="Content" id="dropdown">
+                        <option value="Movies">Movies</option>
+                        <option value="Series" selected>Series</option>
+                    </select>
+                </div>
+                <div class="input-box"  id="checkbox1" >
+                    <br><label for="name">Movie type</label><br>
+                    <input type="checkbox" name="movie" id="bir" value="Comedy" checked> 
+                    <label for="bir">Comedy</label><br>
+                    <input type="checkbox" name="movie" id="iki" value="Action"> 
+                    <label for="iki">Action</label><br>
+                    <input type="checkbox" name="movie" id="uc" value="Romance" checked> 
+                    <label for="uc">Romance</label><br><br>
+                </div>
+                <div class="input-box"  id="radio1" >
+                    <label for="name">Gender</label><br>
+                    <input type="radio" name="Gender" id="bir1" value="Male" checked> 
+                    <label for="bir1">Male</label><br>
+                    <input type="radio" name="Gender" id="iki2" value="Female"> 
+                    <label for="iki2">Female</label><br>
+                    <input type="radio" name="Gender" id="uc3" value="Other"> 
+                    <label for="uc3">Other</label><br><br>
+                </div>
+                <div class="input-box">
+                    <label for="name">Feedback</label><br>
+                    <textarea id="feedback" name="Feedback"   placeholder="Any Comments"></textarea>
+                </div>
+
+                <div class="form-submit" >
+                  
+                <input type="submit" value="Send" id="form-button">
+                <!-- <input type="reset" value="Reset"> -->
+                </div>
+                
+
+            </form>
+        </section>
+    </div>
+</body>
+</html>
