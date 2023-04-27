@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="assets/logo.png" alt="">
+            <img src="assets/logo.png" alt="logo" class="logo" >
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -19,6 +19,36 @@
                 <li><a href="#">CONNECT</a></li>
             </ul>
         </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE <br> REAL <br> SOUND</h1>
+            </div>
+           <div class="right-col">
+                <p>Click Listen To Here</p>
+                <img src="assets/play.png" alt="click" id="icon" >
+            </div> 
+        </div>
     </div>
+    <audio  id="mySong" >
+        <source src="./assets/song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const mySong =document.getElementById("mySong")
+        const icon =document.getElementById("icon")
+
+        icon.onclick = function() {
+           // mySong.play()
+           if (mySong.paused) {
+                mySong.play();
+                icon.src ="assets/pause.png"
+           } else {
+                mySong.pause();
+                icon.src ="assets/play.png"
+           }
+        }
+
+    </script>
+
 </body>
 </html>
