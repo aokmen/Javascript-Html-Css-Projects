@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+   
     <title>Document</title>
 </head>
 <body>
@@ -32,23 +34,24 @@
     <audio  id="mySong" >
         <source src="./assets/song.mp3" type="audio/mp3">
     </audio>
+    <script>src="script.js"</script>
+
+    <script src="main. js"></script>
 
     <script>
         const mySong =document.getElementById("mySong")
-        const icon =document.getElementById("icon")
+const icon =document.getElementById("icon")
 
-        icon.onclick = function() {
-           // mySong.play()
-           if (mySong.paused) {
-                mySong.play();
-                icon.src ="assets/pause.png"
-           } else {
-                mySong.pause();
-                icon.src ="assets/play.png"
-           }
-        }
-
+icon.onclick = function() {
+   // mySong.play()
+   if (mySong.paused) {
+        mySong.play();
+        icon.src ="assets/pause.png"
+   } else {
+        mySong.pause();
+        icon.src ="assets/play.png"
+   }
+}
     </script>
-
 </body>
 </html>
