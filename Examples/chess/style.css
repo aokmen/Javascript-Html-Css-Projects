@@ -1,0 +1,30 @@
+body{
+    /* background-color: coral; */
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 480px;
+    margin: 0 auto;
+}
+td{
+    border: 1px solid black; 
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+.black{
+    background-color: black;
+    color: white;
+    font-size:24px
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size:24px
+}
+h1{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0;
+}

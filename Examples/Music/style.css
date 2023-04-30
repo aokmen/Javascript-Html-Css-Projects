@@ -74,3 +74,11 @@ body{
  cursor: pointer;
  width: 80%;
 }
+a:hover{
+    /* background-color: rgb(101, 160, 160); */
+    padding: 2px;
+    border-radius: 5px;
+    border: 2px solid rgb(101, 160, 160);
+    box-shadow: 2px 2px 20px rgb(101, 160, 160);
+    
+}
