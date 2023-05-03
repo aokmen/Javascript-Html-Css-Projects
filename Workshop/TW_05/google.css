@@ -1,0 +1,74 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 1px solid red; */
+   
+}
+.sign_btn{
+    padding: 10px 15px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 13px;
+    /* border: 1px solid red; */
+  
+}
+li img{
+   margin-bottom: -10px;
+   width: 30px;
+   /* border: 1px solid red; */
+  
+  
+}
+main{
+    text-align: center;
+   margin-top: 200px;
+
+}
+input{
+    width:500px;
+    height: 45px;
+    border-radius: 50px;
+    margin: 0 0 30px 0;
+    border: none;
+    box-shadow: 1px 1px 5px gray;
+}
+.search{
+    width: 500px;
+    margin: 0 auto;
+    border:1px solid red;
+    position: relative;
+    
+}
+.mic{
+    width: 15px;
+    float: right;
+   margin-top: 30px;
+   position: absolute;
+}
+.mag{
+    width: 30px;
+    position: absolute;
+}
+main button{
+    background-color: rgba(232, 232, 232, 0.975);
+    padding: 10px 20px;
+    margin-bottom:20px ;
+    border: none;
+    color: rgb(112, 111, 111);
+    margin-left: 10px;
+}
+main p{
+    font-size: 13px;
+}
