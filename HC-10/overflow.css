@@ -1,0 +1,23 @@
+.box{
+    border: 5px solid black;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 4rem;
+    background-color: bisque;
+}
+.box1{
+overflow: visible;
+}
+.box2{
+overflow: hidden;
+}
+.box3{
+overflow: scroll;
+}
+.box4::-webkit-scrollbar{
+
+      visibility: hidden;
+}
+.box5{
+
+}
