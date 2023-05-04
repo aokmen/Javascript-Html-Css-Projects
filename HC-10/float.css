@@ -1,0 +1,33 @@
+*{
+    margin:0;
+}
+
+.img-float{
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.par1{
+    background-color: coral;
+    text-align: justify;
+}
+.clear{
+    /* clear: both; */
+}
+.box{
+    float: left;
+    font-size: 2rem;
+}
+.box1{
+background-color: aqua;
+width: 10.33%;
+}
+.box2{
+background-color: bisque;
+width: 33.33%;
+}
+.box3{
+background-color: rgb(210, 125, 125); 
+width: 30.33%;
+}
