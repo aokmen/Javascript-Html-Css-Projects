@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+
+.abs{
+    background-color: coral;
+    width: 10cm;
+}
+.div2{
+background-color: coral;
+width: 50%;
+height: 50vh;
+}
+.div3{
+    background-color: gold; 
+    width: 50%;
+    height: 50%;
+
+}
+.div4{
+    background-color: cadetblue;
+    width: 60vw;
+}
