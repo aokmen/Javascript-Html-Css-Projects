@@ -1,0 +1,58 @@
+*{
+/* color: white; */
+font-family: Arial, Helvetica, sans-serif;
+
+text-align: center;
+}
+.container{
+ margin-top: 500px;
+}
+body{
+    background-image: url(./img/tree.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    /* transition: background 2s linear; */
+    transition: background 2s ease-in-out;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    /* box-shadow: 0 0 30px white; */
+    color: darkred;
+  /* background-color: white; */
+  text-shadow: -1px -1px 30px #fafafa, 1px -1px 30px #ffffff, -1px 1px 30px #ffffff, 1px 1px 30px #ffffff;
+}
+h2{
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: -20px;
+    color: darkred;
+    text-shadow: -1px -1px 30px #fafafa, 1px -1px 30px #ffffff, -1px 1px 30px #ffffff, 1px 1px 30px #ffffff;
+}
+.footer{
+    margin: auto;
+    margin-top: 400px;
+  
+    /* margin: auto; */
+    width: 500px;
+    height: 200px;
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-items: center; */
+}
+.div1{
+    margin: auto;
+    height: 20px;
+    width: 130px;
+    /* border: 1px solid red; */
+    background-color: rgb(146, 147, 132);
+    border-radius: 10px;
+}
+.div1:hover{
+    background-color: coral;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0 0 40px coral;
+}
