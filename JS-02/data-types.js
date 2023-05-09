@@ -234,3 +234,25 @@ console.log(typeof parseFloat(son));
 
 let son1 = 123;
 console.log(typeof Number(son1));
+
+console.clear();
+//! ---------DATA OBJECT------------------
+
+const now = new Date();
+console.log(now);
+const year = now.getFullYear();
+console.log(year);
+
+//yas hesaplama
+// let birthyear = +prompt("Dogum yilinizi girin:");
+// console.log("Yasiniz:",year-birthyear);1985
+
+const month=now.getMonth()
+console.log(month); //Array Ocak:0 dan basliyor
+const day=now.getDay() // Array pazar:0 dan basliyor
+console.log(day);
+const hour=now.getHours()
+const minute=now.getMinutes()
+console.log(`${hour}:${minute}`);
+
+
