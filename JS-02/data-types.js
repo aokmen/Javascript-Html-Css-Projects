@@ -197,6 +197,40 @@ let birthday2=17;
 console.log(typeof birthday2.toString());
 console.log(Number(false));
 
-
+console.clear();
 //? ------------------Examples---------------------
 
+
+console.log(Math.PI);
+console.log(Math.floor(Math.PI));
+
+console.log(Math.PI);
+console.log(Math.PI.toFixed(4));
+
+console.log(Math.max(4,5,6,-10,-20,20));
+console.log(Math.min(4,5,6,-10,-20,20));
+
+console.log(Math.round(Math.random()*100));
+
+console.log(Math.pow(2,8));
+console.log(Math.sqrt(121));
+
+let jav= "Javascript";
+console.log(jav[1]);
+
+let sen = "sen ben o";
+console.log(sen);
+
+let sen2 = "sen \nben \n\to";
+console.log(sen2);
+console.log(sen.concat(sen2));
+console.log(`first: + ${sen} + second: + ${sen2}`);
+
+let exp = 3>10;
+console.log(exp);
+
+let son = "123";
+console.log(typeof parseFloat(son));
+
+let son1 = 123;
+console.log(typeof Number(son1));
