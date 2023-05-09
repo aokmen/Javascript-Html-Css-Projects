@@ -196,3 +196,7 @@ console.log(typeof String(birthday));
 let birthday2=17;
 console.log(typeof birthday2.toString());
 console.log(Number(false));
+
+
+//? ------------------Examples---------------------
+
