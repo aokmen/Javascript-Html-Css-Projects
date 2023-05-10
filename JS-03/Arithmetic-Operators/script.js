@@ -37,7 +37,7 @@ console.log("Modules:",number1%2);
 console.log(number1++);  //number1 = number1 + 1
 console.log(number1);
 
-//++num önce sayiyi yazar sonra sayiyi 1 arttirir
+//++num önce sayiyi 1 arttirir sonra sayiyi yazar
 console.log(++number1);
 console.log(number1);
 
@@ -46,7 +46,7 @@ console.log("decrement");
 console.log(number1--);
 console.log(number1);
 
-//--num önce sayiyi yazar sonra sayiyi 1 azaltir
+//--num önce sayiyi 1 azaltir sonra sayiyi yazar  
 console.log(--number1);
 console.log(number1);
 
@@ -60,3 +60,10 @@ const onlar=(Math.trunc(num/10))%10
 const yüzler=(Math.trunc(num/100))
 
 console.log(`Sayı değerleri ${yüzler} ${onlar} ${birler}`);
+
+console.clear();
+let no = 325;
+let a= no%10;
+let b=((no-a)/10)%10;
+let c=((no-(10*b)-a)/100)%10;
+console.log(`Sayı değerleri ${c} ${b} ${a}`);
