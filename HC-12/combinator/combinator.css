@@ -1,0 +1,88 @@
+*{
+    /* border: 1px solid red; */
+}
+div p {
+    /* color: red; */
+}
+.container div p{
+    /* color: red; */
+}
+
+
+/* p den hemen sonra gelen div  >> p nin disindan hemen sonra gelen div*/
+p+div{   
+    color: aqua;
+}
+
+
+/* div den hemen sonra gelen p  >> div in disinda hemen sonra gelen p*/
+div + p{
+ background-color: aquamarine;
+}
+
+
+/* div (parent) in icinden gelen tüm p (child) */
+div>p{ 
+    background-color: rgb(244, 127, 255);
+   }
+h2[title="title1"]{
+    color: red;
+}
+p[title="paragraf1"]{
+    color: rgb(85, 33, 230);
+}
+a[target="_blank"]{
+    font-size: 2rem;
+    text-decoration: none;
+    color: brown;
+}
+#paragraf2::first-line{
+    font-size: 25px;
+}
+#paragraf2::first-letter{
+    font-size: 50px;
+    background-color: brown;
+}
+ul li{
+    background-color: olive;
+    width: 20rem;
+    margin: 1rem;
+}
+ul li::before{
+    content:'❤️';
+    font-size: 2rem;
+}
+ul li::after{
+    content:'😊';
+    font-size: 3rem;
+}
+h3+h1{
+    border: 1px solid red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3.5rem;
+    box-sizing: border-box;
+    margin: 3rem;
+}
+h3+h1:hover{
+   outline: 3px dashed darkred;
+   cursor: pointer;
+   outline-offset: 3px;
+}
+/* p den sonra tüm h3 ler */
+p~h3{
+    border: 5px solid red;
+    width: 20rem;
+    font-size: 3rem;
+    text-align: center;
+    margin:auto;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: 10px inset purple;
+    outline-offset: 0.5rem;
+
+    background-color: coral;
+}
