@@ -1,0 +1,38 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.outher{
+    background-color: coral;
+    width: 500px;
+    height: 500px;
+}
+
+.inner{
+    background-color: rgb(80, 232, 255);
+    width: 50%;
+    height: 50%;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-name: travel;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-delay: 1s; */
+    animation: travel 2s ease-in-out  infinite alternate;
+}
+@keyframes travel {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translateY(100%);
+        border-radius: 50%;
+    }
+    50%{
+        transform: translate(100%, 100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}

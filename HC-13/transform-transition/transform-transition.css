@@ -1,0 +1,110 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.yazi {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 50vw;
+}
+.yazi1{
+    background-color: darkcyan;
+    transform: rotateX(180deg);
+}
+.yazi2{
+    background-color: rgb(23, 231, 120);
+    transform: rotateY(180deg);
+}
+.yazi3{
+    background-color: rgb(213, 135, 156);
+    transform: rotate(20deg);
+    /* transform-origin: right; */
+
+     /************** TRANSFORM-SCALE***********/
+}
+.yazi4{
+    background-color: rgb(217, 223, 26);
+    transform: scaleX(1.5);
+
+}
+.yazi5{
+    background-color: rgb(139, 0, 88);
+    
+}
+.yazi5:active{
+    background-color: rgb(139, 0, 88);
+    transform: scaleY(1.5);
+    cursor: pointer;
+}
+.yazi6{
+    background-color: rgb(15, 155, 206);
+}
+.yazi6:hover{
+    background-color: rgb(15, 155, 206);
+    transform: rotate(30deg) scale(1.5);
+    cursor: pointer;
+}
+img{
+    /* transform: rotate(150deg) rotateX(40deg) rotatey(40deg); */
+    transform: skew(30deg);
+}
+
+     /**************TRANSFORM-TRANSLATE***********/
+
+.box{
+    background-color: coral;
+    width: 100px;
+    height: 50px;
+}
+
+.x{
+    /* transform: translateX(50px); */
+    transition-property: width;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(1,-0.04, 0.41, 0.48);
+    /* transition: background-color 1s, width 1s; */
+}
+.x:active{
+    /* transform: translateX(50px); */
+    background-color: blueviolet;
+    width: 300px;
+
+}
+.y{
+    /* transform: translateY(150px); */
+    transition: all 2s ease-in;
+}
+
+.y:hover{
+    transform: translate(150px,150px);
+}
+
+.xy{
+    transition: all 2s ease-in-out;
+}
+.xy:active{
+    transform: translate(50px, 50px);
+    height: 250px;
+  
+    margin-top: 5px;
+}
+
+.btn-div{
+    text-align: center;
+}
+.btn{
+ background-color: aqua;
+ padding: 20px;
+ border: 2px solid gray;
+ border-radius: 5px;
+ font-size: 1.3rem;
+ /* transition: background-color 2s, color 1s,box-shadow 2s, transform 1s ease-in-out; */
+ transition: all 2s;
+}
+.btn:hover{
+    background-color: coral;
+    color: white;
+    box-shadow: 0 0 50px darkcyan;
+    transform: scale(95%);
+}
