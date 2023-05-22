@@ -50,3 +50,46 @@ console.log(sum(10,20));
 console.log(sum(100,200));
 console.log(sum(1000,2000));
 console.log(sum(10000,20000));
+
+// Fonksiyonu bir defa yazıp defalarca kullanmak için  parametre alırlar
+// Eğer bir fonksiyon parametre alıyorsa , o aldığı parametre,değeriyle ve  özellikleriyle gelir.
+
+//?   function fonksiyonadi(parametre1,parametre2, ...){   Parametre yada argüman denir
+//      yapılacak işlemler
+//   return ile oluşturlan sonucu geri gönder
+// 
+
+console.clear();
+
+function tamadi (adi,soyadi){
+    return `tam adi: ${adi} ${soyadi}`;
+}
+console.log(tamadi("ali","veli"));
+
+
+function fullname(firstname,lastname){
+    let fullname=firstname+" "+lastname;
+    console.log(fullname);
+}
+
+fullname("Ali","Veli");
+
+console.clear();
+
+function adi (adi){
+    for (let i = 0; i < 5; i++) {
+        console.log("Adi:",adi);
+    }
+}
+adi("Ali");
+
+
+console.clear();
+
+function tamadi (adi,soyadi=""){  //! Varsayilan bir deger atanabilir...
+    return `tam adi: ${adi} ${soyadi}`;
+}
+console.log(tamadi("ali"));
+console.log(tamadi("ali","veli"));
+
+
