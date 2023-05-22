@@ -108,7 +108,7 @@ let b=1;
 let strfib= '0 1'
 for (let i = 0; i < 20; i++) {
     c = a+b;
-    strfib += `${c}`
+    strfib += ` ${c}`
     a=b;
     b=c;
 
