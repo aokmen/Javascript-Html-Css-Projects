@@ -26,7 +26,7 @@ main h1 {
 
 form{
     padding: 40px;
-    position: relative;
+   /* position: relative; */
 }
 .fa{
     color: #828282;
@@ -93,9 +93,9 @@ label{
     border: none;
     border-radius: 8px;
     font-weight: 700;
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
     cursor: pointer;
+margin-left: 270px;
 }
 
  /*--------------------------Container-Right-----------------------------*/
@@ -164,12 +164,10 @@ img{
 
 @media only screen and (max-width: 960px) {
     .container{
-   
         display: block;
     }
-    .button{
-        display: flex;
-        vertical-align: ;
-        
+   
+    .shopping{
+    margin-left: 35px;
     }
 }
