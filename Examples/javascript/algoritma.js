@@ -142,16 +142,56 @@ console.clear();
 
 
 
-for (let i=3 ;i <101 ;i++) {
-    let b=true;
-    for(let a=2; a<i; a++ ){
+// for (let i=3 ;i <101 ;i++) {
+//     let b=true;
+//     for(let a=2; a<i; a++ ){
    
-        if(i%a === 0 ){
-          b=false;
-            break;
-        }
-    }
-    if(b==true){
-        console.log(i);
-    }
-}
+//         if(i%a === 0 ){
+//           b=false;
+//             break;
+//         }
+//     }
+//     if(b==true){
+//         console.log(i);
+//     }
+// }
+// console.clear;
+// sum="*";
+// sonuc="";
+// console.log(sum);
+// let n="10"
+// for (let i = 1; i <= n; i++) {
+//     space="";
+//     for (let j = n; j >1 ; j--) {
+//         space +="-"
+       
+//     }
+//     sum +="**"
+//     sonuc = space+sum
+//     console.log(sonuc);
+
+  //   *
+  //  ***
+  // *****
+    
+// }
+
+console.clear;
+// let n=3;
+// for(let i=1;i<=n;i++){
+//     let star="*";
+//     let space=".";
+//    console.log(`${space.repeat(n-i)} ${star.repeat((2*i)-1)} ${space.repeat(n-i)}`);
+// } 
+// for(let i=4;i>0;i--){
+//     let star="*";
+//     let space=".";
+//     let n=4;
+//    console.log(`${space.repeat(n-i+2)} ${star.repeat((2*i)-1)}${space.repeat(n-i+2)}`);
+// } 
+
+
+  //   *
+  //  ***
+  // *****
+    
