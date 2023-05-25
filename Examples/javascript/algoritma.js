@@ -176,7 +176,7 @@ console.clear();
     
 // }
 
-console.clear;
+// console.clear;
 // let n=3;
 // for(let i=1;i<=n;i++){
 //     let star="*";
@@ -194,4 +194,63 @@ console.clear;
   //   *
   //  ***
   // *****
-    
+  // let n=5;
+
+//   for(let i=1;i<=n;i++){
+//     let star="*";
+//     let space=".";
+//    console.log(`${space.repeat(n-i+1)} ${star.repeat((2*i)-1)} ${space.repeat(n-i+1)}`);
+// } 
+// for(let i=n-1;i>0;i--){
+//     let star="*";
+//     let space=".";
+//     let n=4;
+//    console.log(`${space.repeat(n-i+2)} ${star.repeat((2*i)-1)}${space.repeat(n-i+2)}`);
+// }
+
+//    *
+//   ***
+//  *****
+// *******
+//*********
+// let n=10;
+// let sum="*";
+
+// for (let i = 0; i < n; i++) {
+//   sum +="**"
+//   console.log(sum);
+// }
+
+
+// sum="*";
+// sonuc="";
+// console.log(sum);
+// let n="10"
+// for (let i = 1; i <= n; i++) {
+//     space="";
+//     for (let j = n; j >1 ; j--) {
+//         space +="-"
+       
+//     }
+//     sum +="**"
+//     sonuc = space+sum
+//     console.log(sonuc);
+//   }
+
+
+
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     let star="*";
+//     let space=" ";
+//    console.log(`${space.repeat(n-i)} ${star.repeat((2*i)-1)} ${space.repeat(n-i)}`);
+// }
+
+
+
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     let star="*";
+//     let space="-";
+//    console.log(`${space.repeat(n-i)} ${star.repeat((2*i)-1)} ${space.repeat(n-i)}`);
+// }
