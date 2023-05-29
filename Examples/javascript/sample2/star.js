@@ -152,18 +152,44 @@ return parseInt(sum);
 // };
 // document.write(isValid("(]"));
 
-var twoSum = function(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        let array=[];
+// var twoSum = function(nums, target) {
+//     for (let i = 0; i < nums.length; i++) {
+//         let array=[];
 
-        for (let j = nums.length-1; j > i; j--) {
-            if (nums[i]+nums[j]===target) {
-                array.push(i);
-                array.push(j);
-                return array;
-            }
-        }
-    }
-};
+//         for (let j = nums.length-1; j > i; j--) {
+//             if (nums[i]+nums[j]===target) {
+//                 array.push(i);
+//                 array.push(j);
+//                 return array;
+//             }
+//         }
+//     }
+// };
 
-console.log(twoSum([2,5,5],10));
+// console.log(twoSum([2,5,5],10));
+
+// var isPalindrome = function(x) {
+// let sum=0;
+//    let y= x.toString();
+//     for (let i = 0; i <= y.length/2; i++) {
+      
+//         if(y[i]===y[y.length-1-i]) sum++;
+//     }
+//     return sum===Math.floor(y.length/2)+1 ? true : false;
+// };
+
+// console.log(isPalindrome(12233221));
+
+let sayi = 123;
+let on1=0;
+while(sayi!=0){
+    let bir= sayi%10;  //3  //2  //1
+    console.log("bir:",bir);
+    on1 = on1*10 + bir; //30 //320
+    console.log("on:",on1);
+    sayi = Math.trunc(sayi/10) //12,3 >>12  >>1
+    console.log("sayi:",sayi);
+    
+}
+console.log(on1);
+
