@@ -227,11 +227,44 @@ return parseInt(sum);
 // };
 // lengthOfLastWord(" ");
 
-var lengthOfLastWord = function(s) {
-    s = s.trim(); // Boşlukları baştan ve sondan kırpma
+// var lengthOfLastWord = function(s) {
+//     s = s.trim(); // Boşlukları baştan ve sondan kırpma
      
-     let words = s.split(" "); // Diziyi boşluklara göre parçalamak
-     let lastWord = words[words.length - 1];
-     console.log(`The last word is "${lastWord}" with length ${lastWord.length}.`);
-     return  lastWord.length;
- }
+//      let words = s.split(" "); // Diziyi boşluklara göre parçalamak
+//   for (let index = 0; index < words.length; index++) {
+//    console.log(words[index]);
+    
+//   }
+//  }
+//  lengthOfLastWord( "   fly me   to   the moon  ");
+
+// var mergeTwoLists = function(list1, list2) {
+//     if (!Array.isArray(list1) || !Array.isArray(list2)) {
+//         console.log("Both list1 and list2 should be arrays.");
+//         return;
+//     }
+//     list1 = list1.concat(list2);
+//     list1 = list1.sort((a,b)=>a-b);
+//     return list1;
+// };
+
+// console.log(mergeTwoLists(list1 = [1,2,4,], list2 = [1,3,4])
+// );
+var removeDuplicates = function(nums) {
+    if (nums.length === 0) {
+        return [];
+    }
+    
+    var num2 = [nums[0]];
+    
+    for (var i = 1; i < nums.length; i++) {
+        if (nums[i] !== nums[i - 1]) {
+            num2.push(nums[i]);
+        }
+    }
+    
+    return num2;
+};
+
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
+
