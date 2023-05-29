@@ -233,5 +233,5 @@ var lengthOfLastWord = function(s) {
      let words = s.split(" "); // Diziyi boşluklara göre parçalamak
      let lastWord = words[words.length - 1];
      console.log(`The last word is "${lastWord}" with length ${lastWord.length}.`);
-     return lastWord.length;
+     return  lastWord.length;
  }
