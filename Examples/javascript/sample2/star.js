@@ -180,16 +180,58 @@ return parseInt(sum);
 
 // console.log(isPalindrome(12233221));
 
-let sayi = 123;
-let on1=0;
-while(sayi!=0){
-    let bir= sayi%10;  //3  //2  //1
-    console.log("bir:",bir);
-    on1 = on1*10 + bir; //30 //320
-    console.log("on:",on1);
-    sayi = Math.trunc(sayi/10) //12,3 >>12  >>1
-    console.log("sayi:",sayi);
+// let sayi = 123;
+// let on1=0;
+// while(sayi!=0){
+//     let bir= sayi%10;  //3  //2  //1
+//     console.log("bir:",bir);
+//     on1 = on1*10 + bir; //30 //320
+//     console.log("on:",on1);
+//     sayi = Math.trunc(sayi/10) //12,3 >>12  >>1
+//     console.log("sayi:",sayi);
     
-}
-console.log(on1);
+// }
+// console.log(on1);
 
+// let s = "   fly me   to   the moon  ";
+// let cumle = s.replace(/\s+/g,' ')
+// cumle = cumle.trim();
+// console.log(cumle);
+// let kelime = cumle.split(" ");
+// for (let i = 0; i < kelime.length; i++) {
+
+// }
+// console.log(kelime[kelime.length-1]);
+// console.log(kelime[kelime.length-1].length);
+
+// let s = "   fly me   to   the moon  ";
+// let cumle = s.replace(/\s+/g,' ')
+// cumle = cumle.trim();
+// console.log(cumle);
+// let kelime = cumle.split(" ");
+// for (let i = 0; i < kelime.length; i++) {
+
+// }
+// console.log(kelime[kelime.length-1]);
+// console.log(kelime[kelime.length-1].length);
+
+
+// var lengthOfLastWord = function(s) {
+//     s = s.trim(); // Boşlukları baştan ve sondan kırpmak
+//     if (s === "") {
+//         console.log("The input string does not contain any words.");
+//         return 0;
+//     }
+//     let m = s.match(/\b\w+\b/g);
+//     console.log(`The last word is "${m[m.length-1]}" with length ${(m[m.length-1]).length}.`);
+// };
+// lengthOfLastWord(" ");
+
+var lengthOfLastWord = function(s) {
+    s = s.trim(); // Boşlukları baştan ve sondan kırpma
+     
+     let words = s.split(" "); // Diziyi boşluklara göre parçalamak
+     let lastWord = words[words.length - 1];
+     console.log(`The last word is "${lastWord}" with length ${lastWord.length}.`);
+     return lastWord.length;
+ }
