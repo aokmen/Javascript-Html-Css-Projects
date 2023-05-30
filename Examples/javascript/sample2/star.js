@@ -250,21 +250,44 @@ return parseInt(sum);
 
 // console.log(mergeTwoLists(list1 = [1,2,4,], list2 = [1,3,4])
 // );
+// var removeDuplicates = function(nums) {
+//     if (nums.length === 0) {
+//         return [];
+//     }
+    
+//     var num2 = [nums[0]];
+    
+//     for (var i = 1; i < nums.length; i++) {
+//         if (nums[i] !== nums[i - 1]) {
+//             num2.push(nums[i]);
+//         }
+//     }
+    
+//     return num2;
+// };
+
+// console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
+
+// const removeDuplicates = (nums) => {
+//     for (let j = 0; j < nums.length - 1; j++) {
+//         if (nums[j] == nums[j + 1]) {
+//             nums.splice(j + 1, 1);
+//             j--;
+//         }
+        
+//     }
+//    return nums;
+// };
 var removeDuplicates = function(nums) {
-    if (nums.length === 0) {
-        return [];
-    }
-    
-    var num2 = [nums[0]];
-    
-    for (var i = 1; i < nums.length; i++) {
-        if (nums[i] !== nums[i - 1]) {
-            num2.push(nums[i]);
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === nums[i+1]) {
+            nums.splice(i, 1)
+            i--
         }
     }
-    
-    return num2;
+
+    return nums.length
 };
 
 console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
-
