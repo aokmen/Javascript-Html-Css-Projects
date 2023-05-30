@@ -172,4 +172,4 @@ console.log(message.slice(3,5));  //ca
 
 console.log(message.slice(3));     //calama
 
-console.log(message.slice(-5,-3));
+console.log(message.slice(-5,-3)); //al
