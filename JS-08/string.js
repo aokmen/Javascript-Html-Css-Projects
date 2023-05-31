@@ -294,11 +294,11 @@ console.clear();
 // -----------------------------------1- Hosgeldin Kullanici Adi--------------------------
 
 
-const user = () => {
-    let ad = prompt("Kullanici adini giriniz:")
-    return `${ad.toUpperCase()} Sitemize Hoşgeldiniz`
-}
- console.log(user());
+// const user = () => {
+//     let ad = prompt("Kullanici adini giriniz:")
+//     return `${ad.toUpperCase()} Sitemize Hoşgeldiniz`
+// }
+//  console.log(user());
 
 // -----------------------------------2- Romen Rakami-------------------------------------
 const cevir = (romen) =>{
