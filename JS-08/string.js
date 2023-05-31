@@ -329,33 +329,33 @@ const cevir = (romen) =>{
 console.log(cevir("XXV"));
 // -----------------------------------3- Email Kullanici Adi------------------------------
 
-// let email = "martin@clarusway.com";
-// console.log((email.split("@"))[0]);
+let email = "martin@clarusway.com";
+console.log((email.split("@"))[0]);
 
 // -----------------------------------4- Kelimeyi substring ayirma------------------------
 
-// function Substrings(word) {
-//     let word2="";
-//     for (var i = 0; i < word.length; i++) {
-//       for (var j = i + 1; j <= word.length; j++) {
-//        word2 += (word.slice(i, j)).concat(" ");
-//       } 
-//     }
-//     return word2;
-//   }
+function Substrings(word) {
+    let word2="";
+    for (var i = 0; i < word.length; i++) {
+      for (var j = i + 1; j <= word.length; j++) {
+       word2 += (word.slice(i, j)).concat(" ");
+      } 
+    }
+    return word2;
+  }
 
-//   console.log(Substrings("abc"));
+  console.log(Substrings("abc"));
   
-//   console.clear();
+  console.clear();
 
 // -----------------------------------5- Kelimeyi camelcase yapma------------------------
 
-// let cumlem = "Bugün günesli bir gün";
-//  words = cumlem.toLowerCase().split(" ");
-// for (let i = 1; i < words.length; i++) {
-//     words[i] = words[i][0].toUpperCase() + words[i].slice(1);  
-// }
+let cumlem = "Bugün günesli bir gün";
+ words = cumlem.toLowerCase().split(" ");
+for (let i = 1; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);  
+}
 
-// console.log(words.join(""));
+console.log(words.join(""));
 
 
