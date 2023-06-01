@@ -245,16 +245,198 @@ console.clear();
   
 //   console.log("Ünsüz Harfler:", consonantsInSentence);
 
-let cumle = "Javascript dersleri basladi";
+// isimler = ["a","b","c","d"];
 
-const harf = (unsuz) =>{
-    let bul=[];
-    let harfler = /[bcdfghjklmnprstwxyz]/
+// isimler.forEach(isim => console.log(isim));
+
+// function name(params) {
+    
+// }
+console.clear();
+
+let yazi ="Hello";
+let ayir = yazi.split("");
+for (let i = 0; i < ayir.length; i++) {
+    
+    if(ayir.includes('e')) console.log(ayir[i]);
+    
 }
 
-numbers10=[-45,23,67,98,-546,-33232,0,5454,-34343];
-sum=0;
-for (let i = 0; i < numbers10.length; i++) {
-    numbers10[i]< 0 ? sum +=numbers10[i] : null ;
+
+let cumle = "Hava bugün cok güzel";
+
+let sesli = (yazi) => {
+    for(let i = 0; i < yazi.length; i++){
+        if(yazi[i].match(/[aeıioöuü]/gi))  console.log(yazi[i]);
+    }
 }
-console.log(sum);
+
+console.log(sesli(cumle));
+
+console.clear();
+
+let sayi = [3,5,8,2,1];
+
+    sayi.sort((a,b)=>a-b);
+
+console.log(sayi[sayi.length-1]);
+
+console.clear();
+
+
+let sayi1 = [4,8,2,9,1,5,6];
+let sum1=0;
+for (let i = 0; i < sayi1.length; i++) {
+    sum1 +=sayi1[i]
+}
+console.log("toplami:",sum1)
+console.log("ortalamasi:",sum1/(sayi1.length));
+
+
+function space(str) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if(str[i]===' ') count ++ 
+    }
+    return count;
+}
+console.log(space("Bugün hava cok güzel"));
+
+let cumle1 = "Harvey Hoca ile güne baslarken";
+console.log(cumle1.split(" ").length);
+
+console.clear();
+
+
+let cumle2 = "Harvey Hoca baskan Fenerbahce sampiyon";
+console.log(cumle2.split(" ").reverse().join(" "));
+
+
+console.clear();
+
+
+// const users = () =>{
+//     let dizi= [];
+//     let user1;
+//     do {
+//             user1 = prompt("Kullanici adi girin");
+//             dizi.push(user1);
+//             console.log(dizi);
+//     }
+//     while(user1!=="q")
+//     dizi.splice(-2)
+
+//  return dizi;
+// }
+
+
+
+console.clear();
+
+
+
+
+// const yil = (adi,yili) => {
+
+//     let yas = new Date().getFullYear();
+
+//     adi = prompt("Kullanici Adi: ");
+//     yili = prompt("Dogum yili: ");
+//     let sonuc= yas-yili;
+
+//     return console.log(`Kullanici Adi:${adi} Yasi:${sonuc}`);
+// }
+
+// function yil2(params) {
+//     let yas = new Date().getFullYear();
+
+//     adi = prompt("Kullanici Adi: ");
+//     yili = prompt("Dogum yili: ");
+//     let sonuc= yas-yili;
+
+//     return console.log(`Kullanici Adi:${adi} Yasi:${sonuc}`);
+// }
+
+// yil();
+// yil2();
+
+console.clear();
+
+let isimler = ["Bollywood","Yildizi","Harvey","Hoca","Aamir","Khan","ile", "Oscar", "Adayi", "Secildi"];
+let sonuc=[];
+for (let i = 0; i < isimler.length; i++) {
+  sonuc.push(isimler[i].toLowerCase())
+}
+console.log(sonuc);
+
+
+console.clear();
+
+
+const fakt = (n) =>{
+    let num=1;
+    for (let i = 1; i <= n; i++) {
+        num *= i;
+    }   
+    return console.log(num);    
+}
+fakt(5);
+// let string ="alti,bir"612453789
+console.clear();
+
+
+let dizi1 = [5,2,6,1,3,7];
+dizi1.sort((a,b)=>a-b)
+console.log(dizi1);
+
+for (let i = 0; i < dizi1.length; i++) {
+  if(dizi1[i]!==dizi1[i+1]-1){
+    console.log(dizi1[i]+1);
+    break;
+  } 
+}
+
+let string="altı,bir,iki,dört,beş,üç,yedi,sekiz,dokuz"
+let stringNumber=[]
+const splitToNumber=(string) => {
+
+   let newString=string.split(",")
+   console.log(newString);
+   for (let i=0;i<=newString.length-1;i++){
+ 
+    if (newString[i]==="bir") stringNumber.push(1)
+    else if (newString[i]==="iki") stringNumber.push(2)
+    else if (newString[i]==="üç") stringNumber.push(3)
+    else if (newString[i]==="dört") stringNumber.push(4) 
+    else if (newString[i]==="beş") stringNumber.push(5)
+   else if (newString[i]==="altı")stringNumber.push(6)
+   else  if (newString[i]==="yedi") stringNumber.push(7)
+   else  if (newString[i]==="sekiz") stringNumber.push(8)
+   else stringNumber[i]=9 
+   }
+   
+return stringNumber.join("")
+}
+console.log(splitToNumber(string));
+
+
+//! 13- Size bir dizi kelime verildi. "Nemo" kelimesini bulmanız ve şuna benzer bir dize döndürmeniz gerekir: 
+//? "[Nemo'yu bulduğunuz kelimenin sırası] 'nda Nemo'yu buldum!"
+
+//? Nemo'yu bulamıyorsanız, "I can't find Nemo :(" yazın.
+
+//? findNemo("I am finding Nemo !") ➞ "I found Nemo at 4!"
+
+//? findNemo("Nemo is me") ➞ "I found Nemo at 1!"
+
+//? findNemo("I Nemo am") ➞ "I found Nemo at 2!"
+
+
+//! 14- Bir öğe dizisini alan, tüm yinelenen öğeleri kaldıran ve eski diziyle aynı sırada yeni bir dizi döndüren bir fonksiyon oluşturan program 
+
+
+// removeDups([1, 0, 1, 0]) ➞ [1, 0]
+
+// removeDups(["The", "big", "cat"]) ➞ ["The", "big", "cat"]
+
+// removeDups(["John", "Taylor", "John"]) ➞ ["John", "Taylor"]
