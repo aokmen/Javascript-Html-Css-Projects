@@ -220,3 +220,41 @@ console.log(newArr[3].includes("rt")); // true
 /*                                  toString                                  */
 /* -------------------------------------------------------------------------- */
 // dizi elemanları arasına virgül koyarak birleştirip string haline dönüştürür
+
+
+console.clear();
+
+
+// function findConsonants(sentence) {
+//     const consonants = [];
+//     const regex = /[bcdfghjklmnpqrstvwxyz]/gi;
+//     const matches = sentence.match(regex);
+    
+//     if (matches) {
+//       for (let i = 0; i < matches.length; i++) {
+//         const consonant = matches[i].toLowerCase();
+//         consonants.push(consonant);
+//       }
+//     }
+    
+//     return consonants;
+//   }
+  
+//   const inputSentence = "Merhaba, nasılsınız?";
+//   const consonantsInSentence = findConsonants(inputSentence);
+  
+//   console.log("Ünsüz Harfler:", consonantsInSentence);
+
+let cumle = "Javascript dersleri basladi";
+
+const harf = (unsuz) =>{
+    let bul=[];
+    let harfler = /[bcdfghjklmnprstwxyz]/
+}
+
+numbers10=[-45,23,67,98,-546,-33232,0,5454,-34343];
+sum=0;
+for (let i = 0; i < numbers10.length; i++) {
+    numbers10[i]< 0 ? sum +=numbers10[i] : null ;
+}
+console.log(sum);
