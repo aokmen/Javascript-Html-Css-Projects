@@ -508,10 +508,10 @@ const removeDups = (remove) =>{
 
 removeDups([1, 0, 1, 0]);
 
+console.clear();
 
-
-
-
+const str = "Merhaba, Dünya!";
+console.log(str.indexOf("er"));
 
 
 
