@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6,100px);
+
+}
+.content{
+    border: 1px solid;
+}
+.content8{
+    background-color: aquamarine;
+    grid-area: 2/1/6/2;
+
+}
+.content2{
+    background-color: rgb(218, 127, 53);
+    grid-area: 3/1/5/2;
+}
+.content3{
+    display: grid;
+    place-items: center;
+
+}
