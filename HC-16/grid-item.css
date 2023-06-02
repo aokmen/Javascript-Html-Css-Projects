@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    /* row-gap: 10px;
+    column-gap: 20px;
+    gap:10px; */
+    gap: 0.3rem;
+}
+.content{
+    background-color: deepskyblue;
+    border: 1px solid;
+    /* margin: 5px;
+    box-shadow: 5px 5px 5px black;
+    transition: all .3s; */
+}
+/* .content:active{
+
+    box-shadow: 0px 0px 0px black;
+    background-color: aqua;
+} */
+.content1{
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.content2{
+    background-color: rgb(145, 121, 253);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("https://picsum.photos/id/684/600/400");
+    background-size: cover;
+    background-position: center;
+}
+.content17{
+    /* grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: coral;
+    background-image: url("https://picsum.photos/id/684/600/400");
+    background-size: cover;
+    background-position: center;
+}
+.content5{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: rgb(135, 160, 69);
+}
+.content8{
+    grid-column: 4/5;
+    grid-row: 2/5;
+    background-color: rgb(25, 28, 183);
+}
+.content8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content14{
+    /* grid-column: 1/4;
+    grid-row: 4/5; */
+    grid-column: 1/ span 3;
+    grid-row: 4/ span 1;
+    background-color: rgb(128, 48, 193);
+}
+.content3{
+    background-color: rgba(39, 232, 119,0.7);
+    /*row start /col start/  row end / col end */
+    grid-area: 4/2/6/4;
+    z-index: 1;
+}
