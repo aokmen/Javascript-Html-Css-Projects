@@ -420,6 +420,28 @@ return stringNumber.join("")
 console.log(splitToNumber(string));
 
 
+
+
+console.clear();
+
+// sayac = 0;
+//  sayi = (d, l, h) => {
+//   for (let i = l; i <= h; i++) {
+//     if (i % 10 === d || Math.floor(i / 10) === d) {
+//       sayac++;
+//       console.log(i);
+//     }
+//   }
+//   return sayac;
+// };
+// sayi(2, 10, 29);
+// console.log(`toplam ${sayac} kere kullanilmis`);
+
+
+
+
+
+
 //! 13- Size bir dizi kelime verildi. "Nemo" kelimesini bulmanız ve şuna benzer bir dize döndürmeniz gerekir: 
 //? "[Nemo'yu bulduğunuz kelimenin sırası] 'nda Nemo'yu buldum!"
 
@@ -431,12 +453,66 @@ console.log(splitToNumber(string));
 
 //? findNemo("I Nemo am") ➞ "I found Nemo at 2!"
 
+//let text = "Nemo is me";
+
+
+
+
+
+
+const findNemo = (text) => {
+
+    let text2 = text.split(" ");
+    let sayac=0;
+
+    for (let i = 0; i < text2.length; i++) {
+
+        if(text2[i] === "Nemo"){
+            sayac = i+1;
+            break;
+        }     
+    }
+    return sayac ? console.log(`I found Nemo at ${sayac}!`) : console.log("I can't find Nemo :(");
+}
+
+findNemo("I am finding Nemo !");
+
+
+
+
+
 
 //! 14- Bir öğe dizisini alan, tüm yinelenen öğeleri kaldıran ve eski diziyle aynı sırada yeni bir dizi döndüren bir fonksiyon oluşturan program 
-
 
 // removeDups([1, 0, 1, 0]) ➞ [1, 0]
 
 // removeDups(["The", "big", "cat"]) ➞ ["The", "big", "cat"]
 
 // removeDups(["John", "Taylor", "John"]) ➞ ["John", "Taylor"]
+//let remove = [1, 0, 1, 0];
+
+
+
+
+
+const removeDups = (remove) =>{
+
+    remove.sort();
+    let arr =[];
+    for (let i = 1; i <= remove.length; i++) {
+        if(remove[i-1]!==remove[i]) arr.push(remove[i-1]);
+        else continue; 
+    }
+    return console.log(arr);
+} 
+
+removeDups([1, 0, 1, 0]);
+
+
+
+
+
+
+
+
+
