@@ -568,5 +568,7 @@ let [yili,ayi,gunu] = tarih.split("-");
 let [sa,dk,sn] = zaman.split(":");
 let time = new Date();
 console.log(time);
-console.log(endDateString);
+
+console.log(endDateString) ;
+
 console.log(`${new Date().getFullYear()}  ${new Date().getDate()}  ${new Date().getDay()} ${new Date().getHours()}: ${new Date().getMinutes()}:${new Date().getSeconds()}`);
