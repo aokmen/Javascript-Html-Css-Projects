@@ -509,10 +509,64 @@ const removeDups = (remove) =>{
 removeDups([1, 0, 1, 0]);
 
 console.clear();
+/* -------------------------------------------------------------------------- */
+/*                                      1                                     */
+/* -------------------------------------------------------------------------- */
+string="5+7";
+// result=12
+console.log(eval(string));
+string=8*9;
+// result=72
+console.log(eval(string));
 
-const str = "Merhaba, Dünya!";
-console.log(str.indexOf("er"));
+/* ---------------------------------- 1_02 ---------------------------------- */
+let str1 = "5+7";
+const calString = (str1) => {
+    str1.split("");
+    let a = parseInt(str1[0]);
+    let b = parseInt(str1[2]);
+    let c;
+    if (b>a){
+        c=b;
+        b=a;
+        a=c;
+    }
+        if (str1[1]==="+") return a+b;
+        if (str1[1]==="-") return a-b;
+        if (str1[1]==="*") return a*b;
+        if (str1[1]==="/") return a/b;
+}
+console.log(calString("5+7"));
+console.log(calString("5-7"));
+console.log(calString("5*7"));
+console.log(calString("5/7"));
 
+/* -------------------------------------------------------------------------- */
+/*                                      2                                     */
+/* -------------------------------------------------------------------------- */
+const lessThan100 = (le1,le2) => {
+    return le1+le2 < 100 ? true : false;
+}
+console.log(lessThan100(92, 15));
 
+/* -------------------------------------------------------------------------- */
+/*                                      3                                     */
+/* -------------------------------------------------------------------------- */
+let gunler = ["Pazar","Pazartesi","Sali","Carsamba","Persembe","Cuma","Cumartesi"];
+let gun = new Date().getDay();
+let aylar = ["Ocak","Subat","Mart","Nisan","Mayis","Haziran","Temmuz","Agustos","Eylul","Ekim","Kasim","Aralik"];
+let ay = new Date().getMonth();
+console.log(`${new Date().getDate()} ${aylar[ay]} ${gunler[gun]} ${new Date().getFullYear()}`);
+console.clear();
+/* -------------------------------------------------------------------------- */
+/*                                      4                                     */
+/* -------------------------------------------------------------------------- */
 
-
+let endDateString = "2022-12-25 15:00:00";
+let [tarih,zaman] = endDateString.split(" ");
+let [yili,ayi,gunu] = tarih.split("-");
+let [sa,dk,sn] = zaman.split(":");
+let time = new Date();
+console.log(time);
+console.log(endDateString);
+console.log(`${new Date().getFullYear()}  ${new Date().getDate()}  ${new Date().getDay()} ${new Date().getHours()}: ${new Date().getMinutes()}:${new Date().getSeconds()}`);
