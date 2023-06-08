@@ -1,0 +1,140 @@
+:root{
+    --red: #dc3545;   
+}
+section { scroll-margin-top: 100px; }
+
+/*! -------------- 1- NAVBAR -------------- */
+.navbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+
+}
+.navbar-nav{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar .nav-link:hover{
+    color: var(--red);
+}
+/* .navbar .nav-link.active:hover{
+    color: var(--red);
+} */
+/*! -------------- 2- CAROUSEL -------------- */
+.carousel-item{
+    max-height: 100vh;
+    /* height:90vh; */
+}
+.carousel-caption .btn{
+    width: 7rem;
+}
+.carousel-caption h5{
+    color: #ffc107;
+    
+    font-size: 2.4rem;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-weight: 700;
+}
+.carousel-caption p{
+    text-shadow: 0 0 10px rgb(3, 3, 3);
+    font-weight: 600;
+}
+.carousel-caption {
+    bottom: 5rem !important;
+    /* top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%); */
+}
+.carousel-indicators{
+    gap: 0.7rem !important;
+    /* border: 1px solid green; */
+}
+.carousel-indicators button{
+    background-color: var(--red) !important;
+    padding: 0.1rem !important;
+}
+/*! -------------- 3- ABOUT SECTION -------------- */
+#instructors .row{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+/*! -------------- 4- INSTRUCTORS -------------- */
+.card{
+
+    transition: all .3s;
+}
+.card:hover{
+    transform: scale(1.03);
+  
+}
+
+/* section#instructors .card{
+    transition: transform .3s;
+}
+section#instructors .card:hover{
+    transform: scale(1.03);
+}
+*/
+section#instructors i{
+    transition:opacity 0.6s ;
+}
+section#instructors i:hover{
+    opacity: 0.5;
+} 
+
+/*! -------------- 4- STUDENTS SECTION -------------- */
+
+/*! -------------- 5- COURSES SECTION -------------- */
+section#course .nav-link {
+    color: white;
+}
+section#course .nav-link.active {
+    background-color: #dc3545;
+}
+/*! -------------- 6- CONTACT SECTION -------------- */
+section#contact i {
+    color: var(--red);
+    font-size: 1.5rem;
+}
+/*! -------------- 7- FOOTER -------------- */
+footer i {
+    font-size: 2rem;
+    color: white;
+    margin-right: 1rem;
+    transition: color 1s;
+}
+footer i:hover {
+    color: var(--red);
+}
+.btn-up{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--red);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+  
+}
+
+.btn-up:hover{
+    color: rgb(0, 0, 0);
+}
+.btn-up:hover i{
+    transform: scale(1.2);
+    font-size: 1.3rem;
+}

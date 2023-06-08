@@ -572,3 +572,24 @@ console.log(time);
 console.log(endDateString) ;
 
 console.log(`${new Date().getFullYear()}  ${new Date().getDate()}  ${new Date().getDay()} ${new Date().getHours()}: ${new Date().getMinutes()}:${new Date().getSeconds()}`);
+
+console.clear();
+
+/* -------------------------------------------------------------------------- */
+/*                             indexof,LastIndexOf                            */
+/* -------------------------------------------------------------------------- */
+
+const car = ["BMW","Volvo","Fiat","Honda","VW","Honda"];
+console.log(car.indexOf("Honda")); //Ilk eslesen elemanin index numarasi
+console.log(car.lastIndexOf("Honda")); //Son eslesen elemanin index numarasi
+/* -------------------------------------------------------------------------- */
+/*                                   join()                                   */
+/* -------------------------------------------------------------------------- */
+
+console.log(car.join("-"));  //BMW-Volvo-Fiat-Honda-VW-Honda
+
+/* -------------------------------------------------------------------------- */
+/*                                  toString                                  */
+/* -------------------------------------------------------------------------- */
+console.log(car.toString());  //BMW,Volvo,Fiat,Honda,VW,Honda
+
