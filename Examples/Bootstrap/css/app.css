@@ -1,0 +1,63 @@
+section{
+    scroll-margin-top: 50px;
+}
+
+.main_img{
+background-image: url(../img/banner.jpeg);
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: purple;
+padding-top: 20%;
+padding-bottom: 20%;
+}
+.serv_icon{
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background-color: #dc3545;
+    /* border: 1px solid blue; */
+    display: grid;
+    place-items: center;
+
+}
+
+.about img{
+    height: 300px;
+}
+.social_icons a{
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+.team_icon{
+    display: inline-block;
+    border-radius: 50%;
+    width: 250px;
+    margin: auto;
+    height: 250px;
+    color: #fff;
+    background-color: #dc3545;
+    /* border: 1px solid blue; */
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+    border: 10px solid gray;
+}
+.team img{
+    width: 250px;
+    border: 10px solid #cccccc;
+}
+.card{
+    margin-top: 20px;
+}
+.contact{
+    background: url(../img/map.jpeg) no-repeat center center;
+    background-size: cover;
+
+}
