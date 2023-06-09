@@ -163,7 +163,6 @@ console.clear();
 const maaslar = [5000, 7000, 15000, 12000];
 
 maaslar.forEach((maas,index)=> console.log(`${index+1} numarali elemanin maasi ${maas+=maas*0.1}`));
-
 maaslar.forEach((maas,index)=> console.log(`${index+1} numarali elemanin maasi ${maas*1.1}`));
 
 console.clear();
@@ -189,3 +188,4 @@ numbers.forEach((item)=> item % 2 === 0 ? ciftSayilar.push(item) : tekSayilar.pu
 );
 console.log(tekSayilar);
 console.log(ciftSayilar);
+
