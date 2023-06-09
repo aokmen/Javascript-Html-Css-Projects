@@ -375,11 +375,11 @@ const products = [
 
 
 
-//   const toplam = products.reduce((sum,a)=>sum + a.price,0)
-//   console.log(toplam);
+  // const toplam = products.reduce((sum,a)=>sum + a.price,0)
+  // console.log(toplam);
 
-const laptops = products.filter((product)=>product.category==='laptops');
-laptops.forEach((laptop) => document.write(`<p>${laptop.title}</p>`));
+// const laptops = products.filter((product)=>product.category==='laptops');
+// laptops.forEach((laptop) => document.write(`<p>${laptop.title}</p>`));
 
 // const laptops = products.filter((product)=>product.category==='laptops').map((laptop)=>laptop.price+10);
 //    console.log(laptops);
