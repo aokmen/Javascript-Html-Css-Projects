@@ -373,6 +373,8 @@ const products = [
 // console.log(max);
 
 
+
+
 //   const toplam = products.reduce((sum,a)=>sum + a.price,0)
 //   console.log(toplam);
 
