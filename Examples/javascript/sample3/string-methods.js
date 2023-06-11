@@ -229,4 +229,62 @@ console.log(arrayFakt);
 /*    Bir dizideki elemanları rastgele sıralayarak yeni bir dizi oluşturun.   */
 /* -------------------------------------------------------------------------- */
 
-let array_9 = [0,1,2,3,4,5,6,7,8,9];
+// let array_9 = ["a","b","c","d","e","f","g","h","i","k"]  // [0,1,2,3,4,5,6,7,8,9];
+
+// let array = [];
+// let rand = [];
+// let new_Array = [];
+
+// while(new_Array < 10){
+
+//     rand.push(Math.trunc((Math.random(10))*10));  
+//     array = new Set(rand); 
+
+// }
+
+// for (i of array) {
+//     new_Array.push(array_9[i]);
+// }
+
+
+// console.log(new_Array);
+
+let array_9 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"];
+let rand = [];
+let new_Array = [];
+
+// while (new_Array.length < 10) {
+//   let randomIndex = Math.floor(Math.random() * 10);
+//   let randomElement = array_9[randomIndex];
+  
+//   if (!rand.includes(randomIndex)) {
+//     rand.push(randomIndex);
+//     new_Array.push(randomElement);
+//   }
+// }
+
+// console.log(new_Array);
+
+const arrayRandom = array_9.sort(()=>Math.floor(Math.random()-0.5));
+console.log(arrayRandom);
+
+let array_10 = [2,10,3,5,4,7,11,13,79,14,12,16,18,27,23,44];
+let array_11=[];
+const arrayOdds = array_10.filter((arg) => arg%2===1);
+const arrayEvens = array_10.filter((arg) => arg%2===0);
+array_11[0]=arrayOdds;
+array_11[1]=arrayEvens;
+console.log(array_11);
+
+let array_12 = [1,2,3];
+let array_13 = [4,5,6];
+let array_14 = [];
+
+for (let i = 0; i < array_12.length; i++) {
+    array_14.push(array_12[i]);
+    array_14.push(array_13[i]);  
+}
+console.log(array_14);
+
+
+
