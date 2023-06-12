@@ -79,3 +79,157 @@ console.log(personelKayit.calculateAge());
 console.log(personelKayit.formattedAge());
 
 console.log(this);
+
+console.clear();
+
+/* -------------------------------------------------------------------------- */
+/*                               OBJECT METHODS                               */
+/* -------------------------------------------------------------------------- */
+
+// ic ice (nested) objects
+const workerList =
+
+workersList = {
+    person1: {
+      name: "Hery",
+      lastname: "Strevold",
+      DateOfBirth: 2000,
+      job: "developer",
+      salary: 8000,
+      drivingLicense: true,
+    },
+    person2: {
+      name: "Harold",
+      lastname: "Strevy",
+      DateOfBirth: 2002,
+      job: "developer",
+      salary: 40000,
+      drivingLicense: true,
+    },
+    person3: {
+      name: "Gery",
+      lastname: "Strevy",
+      DateOfBirth: 1998,
+      job: "devOps",
+      salary: 30000,
+      drivingLicense: true,
+    },
+  };
+  // Personel 2 nin ad ve maasini yazdirin
+
+  console.log(workerList.person2.DateOfBirth);
+  console.log(workerList.person2.name);
+  console.log(workerList.person2.salary);
+//! Bu gösterimde köseli parantezler icinde degiskenler verilebilir
+  console.log(workerList["person2"].name);
+  console.log(workerList["person2"].salary);
+
+  let pName="person2"
+  console.log(workerList[pName].name);
+
+  // For in
+  //WorkerList icindeki salary'leri yazdiralim
+
+  for (p in workerList) {
+    console.log(workerList[p].DateOfBirth);
+  }
+
+// Object.keys (object icindeki degiskenler :keyler)
+// Object.values (object icindeki degerler :value)
+// Object.entries (object icindeki herseyi verir)
+
+console.log(Object.keys(workerList));
+console.log(Object.values(workerList));
+for (x of Object.values(workerList)) {
+    console.log(x.name);   
+}
+console.clear();
+// DEveloper olan elemanlarin isimlerini ve maaslarini yazdirin
+const developersList = Object.values(workerList).filter((arg) => arg.job === "developer")
+console.log(developersList.map((p) => `Developer ${p.name}nin maasi: ${p.salary}`));
+
+// const developersList = Object.values(workersList)
+//   .filter((x) => x.job === "developer")
+//   .map((p) => console.log(`Developer ${p.name}'nin maaşı: ${p.salary}`));
+
+Object.values(workersList)
+  .filter((x) => x.job === "developer")
+  .forEach((p) => console.log(`Developer ${p.name}'nin maaşı: ${p.salary}`));
+
+  /* -------------------------------------------------------------------------- */
+  /*                     JSON => JAVASCRIPT OBJECT NOTATION                     */
+  /* -------------------------------------------------------------------------- */
+
+  const team = [
+    {
+      name: "Harold",
+      lastname: "Strevy",
+      DateOfBirth: 2000,
+      job: "developer",
+      salary: 8000,
+      drivingLicense: true,
+    },
+    {
+      name: "Harold",
+      lastname: "Strevy",
+      DateOfBirth: 2002,
+      job: "developer",
+      salary: 40000,
+      drivingLicense: true,
+    },
+    {
+      name: "Fernand",
+      lastname: "Strevy",
+      DateOfBirth: 2000,
+      job: "devOps",
+      salary: 7000,
+      drivingLicense: true,
+    },
+  ];
+
+  console.log(team[0].name);
+
+  team.map((arg) => console.log(arg.salary) )
+
+  team.push(
+    {
+        name: "Neyron",
+        lastname: "Gernary",
+        DateOfBirth: 2003,
+        job: "Tester",
+        salary: 25000,
+        drivingLicense: false,
+
+    }
+  )
+  console.log(team);
+
+// team dizisindeki her elemanin meslegini gösteriniz
+team.forEach((arg) => console.log(arg.job));
+
+
+// team dizisindeki masslarin 10% zam yapilmis yeni bir diziye aktarin
+const newSalary= team.map((arg) => arg.salary +=arg.salary*0.1);
+console.log(newSalary);
+
+const teamFullname = team.map((arg) => {
+    return {
+        fullname : arg.name.toUpperCase()+" "+arg.lastname.toUpperCase(),
+        salary : arg.salary += arg.salary*0.1
+    }
+})
+console.log(teamFullname);
+
+const newListe = team.filter((arg) => arg.salary < 10000)
+.map((arg) => {
+    return { lastSalary : arg.salary,
+                name: arg.name    
+    } 
+});
+console.log(newListe);
+
+console.clear();
+//Bir dizinin maas ortalamalari
+const Avarage = team.reduce((sum,item)=>sum +=item.salary,0) / team.length;
+console.log(Avarage);
+
