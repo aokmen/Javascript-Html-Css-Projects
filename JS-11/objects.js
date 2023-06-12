@@ -56,7 +56,7 @@ const personelKayit={
         postalCode:435000
     },
     calculateAge:function () {
-        return new Date().getFullYear() - this.dateofBirth //personelKayit.dateofBirth
+        return new Date().getFullYear() - this.dateofBirth 
     },
     formattedAge:function (){
         return `${this.name}'nin yaşı ${this.calculateAge()}  yaşındadır`
@@ -87,10 +87,8 @@ console.clear();
 /* -------------------------------------------------------------------------- */
 
 // ic ice (nested) objects
-const workerList =
-
-workersList = {
-    person1: {
+const workerList = {
+      person1: {
       name: "Hery",
       lastname: "Strevold",
       DateOfBirth: 2000,
@@ -211,7 +209,7 @@ team.forEach((arg) => console.log(arg.job));
 // team dizisindeki masslarin 10% zam yapilmis yeni bir diziye aktarin
 const newSalary= team.map((arg) => arg.salary +=arg.salary*0.1);
 console.log(newSalary);
-
+// Ad ve soyadinin büyük harflerle birlestirerek ve zamli maas eklenerek yeni bir obje olusturulmasi
 const teamFullname = team.map((arg) => {
     return {
         fullname : arg.name.toUpperCase()+" "+arg.lastname.toUpperCase(),
