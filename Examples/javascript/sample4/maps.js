@@ -307,3 +307,35 @@ const checkDriving = ({drivingLicense,names}) => {
     }
     
     workersList.map((p)=> checkDriving(p))
+
+    console.clear();
+
+    const nameList=["John","Henry","David","John","David","Nathan","Scott"]
+
+// const isimTekrarlari=nameList.reduce((isimToplami,isim)=>{
+//     if (isim in isimToplami)
+//      return console.log(isimToplami[isim]++); 
+  
+// }, {})
+// console.log(isimTekrarlari);
+
+const tekrar = nameList.reduce((sum,i) => {
+  if(i in sum) {sum[i]++;
+  console.log("i:",i);
+  console.log("sum[i]:",sum[i]);
+}
+    else sum[i] = 1;
+    console.log("sum:",sum);
+    return sum;   
+  },{}) 
+
+
+
+
+// result
+// {John: 2, Henry: 1, David: 2, Nathan: 1, Scott: 1}
+// David: 2
+// Henry: 1
+// John: 2
+// Nathan: 1
+// Scott: 1
