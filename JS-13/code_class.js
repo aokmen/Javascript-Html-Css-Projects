@@ -445,7 +445,7 @@ console.clear();
 // 50'nin üzerinde.
 
 const products = [
-    { name: "Product 1", price: 20, category: "Electronics" },
+    { name: "Product 1", price: 40, category: "Electronics" },
     { name: "Product 2", price: 30, category: "Clothes" },
     { name: "Product 3", price: 40, category: "Electronics" },
     { name: "Product 4", price: 50, category: "Clothes" },
@@ -454,6 +454,26 @@ const products = [
     { name: "Product 7", price: 80, category: "Clothes" },
     { name: "Product 8", price: 90, category: "Electronics" },
     ];
+
+const listElectronics = products.filter((i) => i.category === "Electronics").reduce((sum,i) => sum+i.price,0);
+
+
+console.log(listElectronics);   
+
+// const averageCalc = ({price,category}) =>{
+      
+//     return {
+//         category:category,
+//         average:averages
+//     }
+// }
+// const newList_5 = products.map((arg) => averageCalc(arg));
+// console.log(newList_5);
+
+// const newList_4 = products.filter((arg) => arg.category==="Electronics").reduce((sum,i)=>sum + i.price,0)
+// const newList_5 = products.filter((arg) => arg.category==="Clothes").reduce((sum,i)=>sum + i.price,0)
+// console.log("Electronics:",newList_4);
+// console.log("Clothes:",newList_5);
 
     // [
     //     { category: 'Clothes', average: 55 },
