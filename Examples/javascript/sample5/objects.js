@@ -41,13 +41,10 @@ for (i of products) {
   
   if (i.category==="Electronics") {sumElec += i.price; countElec++;}
   if (i.category==="Clothes") {sumClot += i.price; countClot++;}
- 
-
 }
 return [
-  {category:"Clothes", average:sumClot/countClot},
- {category:"Electronics", average:sumElec/countElec},
-]
-
+        {category:"Clothes", average:sumClot/countClot},
+        {category:"Electronics", average:sumElec/countElec},
+       ]
 }
 console.log(findAverage2());
