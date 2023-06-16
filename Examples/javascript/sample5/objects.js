@@ -48,3 +48,8 @@ return [
        ]
 }
 console.log(findAverage2());
+
+var element = document.getElementById("myDiv");
+var element1 = document.getElementsByTagName("p")
+var newDiv = document.createElement("div")
+newDiv.
