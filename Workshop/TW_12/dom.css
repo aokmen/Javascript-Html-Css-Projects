@@ -1,0 +1,30 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+
+}
+
+span {
+    color:red;
+    font-weight:900; 
+    font-size:1.2rem;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.col{
+    padding-top: 100px;
+    width: 33%;
+    border: 1px solid pink;
+    border-radius: 50px;
+    height: 700px;
+    margin: 10px;
+    background-color: pink;
+
+}
+img{
+    width: 50%;
+}
