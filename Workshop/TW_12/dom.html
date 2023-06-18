@@ -6,39 +6,81 @@
     <title>Document</title>
     <link rel="stylesheet" href="dom.css">
 </head>
-<body><div class="container">
-    <div class="row">
-        <div class="col">
-            <textarea name="textarea" id="textarea" cols="30" rows="2"></textarea><br>
-            <button onclick="textArea()">Count vowels</button>
-            <p id="pag"></p>
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+            <div class="center">
+                <div class="count">
+                    <textarea name="textarea" id="textarea" cols="15" rows="2"></textarea><br>
+                    <button id="count" onclick="textArea()">Count vowels</button>
+                    <p id="pag"></p>
+                </div>
+            </div>
+          
+           
         </div>
-        <div class="col">
-            <h1>Guess The Number (1 - 100)</h1>
-            <input type="text"><button>CHECK</button><br>
+        <div class="col col2">
+            <h3>Guess The Number (1 - 100)</h3>
+            <input type="text" id="guess"><button onclick="checkBtn()" id="cBtn" class="cBtn">CHECK</button><br>
             <img src="./img/1.svg" alt="">
             <h2>Write the number</h2>
-            <p></p>
+          
+            <div class="cal">
+                <div class="cal_l">
+                    <h3>Deneme Sayisi:</h3>
+    
+                </div>
+                <div class="cal_r">
+                    <h3>Puan:</h3>
+
+                </div>
+            </div>
+            <div class="cal2">
+                <div ><h1 id="cal">0</h1></div>
+                <div ><h2 id="puan">1000</h2></div>
+                
+            </div>
+            
+            <p id="guessPag"></p>
         </div>
-        <div class="col">
-            <h1>Aylik Gider Takip Uygulamasi</h1>
+        <div class="col col3">
+            <h3>Aylik Gider Takip Uygulamasi</h3>
             <input type="text"><button>Ekle</button>
             <div class="form">
                 <h2>Harcama formu</h2>
                 <div class="form_middle">
                     <div>
                       <p>Harcama Yapılan Yer</p>
-                      <input type="text">
+                      <input type="text" id="inHar">
                     </div>
                     <div>
                         <p>Tarih</p>
-                        <input type="date">
+                        <input type="date" id="tarih">
                     </div>   
                 </div>
                 <p>Harcanan Miktar</p>
-                <input type="text"><br>
-                <button>Kaydet </button>
+                <input type="text" id="miktar"><br>
+                <button id="gider" onclick="gider()">Kaydet</button>
             </div>
+            <div class="table">
+                <table border="1px">
+                    <tr>
+                        <th>Tarih</th>
+                        <th>Harcanan Yer</th>
+                        <th>Miktar</th>
+                    </tr>
+                    <tr id="tr">
+                        <td id="tdate"></td>
+                        <td id="tplace"></td>
+                        <td id="titem"></td>
+                    </tr>
+                    <tr id="tr2">
+
+                    </tr>
+                </table>
+            </div>
+            
         </div>
     </div>
 
