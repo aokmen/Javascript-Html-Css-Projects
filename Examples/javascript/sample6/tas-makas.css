@@ -1,0 +1,47 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    border: 1px solid red;
+    height: 500px;
+    background-color: rgb(75, 218, 237);
+    width: 50%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  
+}
+h1{
+    font-size: 1.5rem;
+}
+.com{
+    display: flex;
+   
+}
+button{
+    margin: 50px 0;
+    background-color: hotpink;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#comH1{
+    color: hotpink;
+    margin-left: 10px;
+}
+#userH1{
+    color: hotpink;
+    margin-left: 10px;
+}
+button:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+
+}
+button:active{
+    box-shadow: 0 0 10px pink;
+}
