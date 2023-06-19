@@ -6,7 +6,7 @@
 
 
 //1 document.createElement(element ismi) -yeni element
-//! sadece element oluşturuluyor ama düğüm oluşturmmaız gerekiyor
+//! sadece element oluşturuluyor ama düğüm oluşturmamız gerekiyor
 //2 document.createTextNode(text)  - Bir eleman için text düğümü oluşturur
 //3 Element.appendChild(text düğüm) - bir text düğümünü elemana bağlar
 
