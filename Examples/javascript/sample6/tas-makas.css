@@ -45,3 +45,11 @@ button:hover{
 button:active{
     box-shadow: 0 0 10px pink;
 }
+.puan{
+   
+    margin-right:20px;
+    color: hotpink;
+    background-color: rgb(31, 38, 38);
+    padding: 7px;
+    border-radius: 20px;
+}
