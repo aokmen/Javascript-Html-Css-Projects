@@ -1,4 +1,9 @@
-#lottie{
+/* #lottie{
     width: 300px;
     height: 300px;
+  } */
+
+  #lottie-container {
+    width: 400px; /* Lottie animasyonunun genişliği */
+    height: 400px; /* Lottie animasyonunun yüksekliği */
   }
