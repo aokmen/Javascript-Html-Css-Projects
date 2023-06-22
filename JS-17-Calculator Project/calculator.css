@@ -31,6 +31,12 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+.display-bottom{
+  font-size: 75px;
+}
+
+
   .buttons-container {
     display: grid;
     grid-gap: 10px;
