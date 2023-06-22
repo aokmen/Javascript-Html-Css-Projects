@@ -11,7 +11,8 @@ function textArea() {
 // let x = "Clarusway bugün nasil";
 
 // console.log((x.match(/[aeıioöuü]/gi)).length);
-const raNum = Math.trunc(Math.random(100)*100);
+const raNum = Math.trunc(Math.random()*100);
+console.log(raNum);
 let cal = 0;
 let puan = 1000;
 function checkBtn() {
