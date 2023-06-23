@@ -51,13 +51,13 @@ function gider() {
     document.getElementById("tdate").innerHTML = `<td>${inHar}</td>`;
     document.getElementById("tplace").innerHTML = `<td>${tarih}</td>`;
     document.getElementById("titem").innerHTML = `<td>${miktar}</td>`;
-    // let newElement = document.createElement("td");
-    // newElement.innerHTML = `${inHar}`;
-    // let newElement2 = document.createElement("td");
-    // newElement2.innerHTML = `${tarih}`;
-    // let newElement3 = document.createElement("td");
-    // newElement3.innerHTML = `${miktar}`;
-    // document.getElementById("tr2").appendChild(newElement);
+    let newElement = document.createElement("td");
+    newElement.innerHTML = `${inHar}`;
+    let newElement2 = document.createElement("td");
+    newElement2.innerHTML = `${tarih}`;
+    let newElement3 = document.createElement("td");
+    newElement3.innerHTML = `${miktar}`;
+    document.getElementById("tr2").appendChild(newElement);
    
  
 }
