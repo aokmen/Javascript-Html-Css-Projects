@@ -28,7 +28,6 @@ window.addEventListener("load", () => {
   VeriyiAl();
 });
 
-
 // Read
 const VeriyiAl = () => {
   todoList.forEach((todo) => {
@@ -36,9 +35,19 @@ const VeriyiAl = () => {
   });
 };
 /* -------------------------------------------------------------------------- */
-
+todoInput.onkeydown = (e) => {
+  if (e.keyCode === 13) {
+    e.prevenDefault();
+    addButton.click();
+  }
+  
+};
 addButton.addEventListener("click", (e) => {
-  e.preventDefault();
+  if (todoInput.value === "") {
+    alert("Bir todo girin");
+    // üst düzey kod algoritması
+    return;
+  }
 
   const newTodo = {
     id: new Date().getTime(), // benzersiz ve tek bir id tanımlaması yaptık
@@ -52,8 +61,10 @@ addButton.addEventListener("click", (e) => {
   localStorage.setItem("todoList", JSON.stringify(todoList));
 
   listeOlustur(newTodo);
-});
 
+  //   todoInput.value=""
+  e.target.closest("form").reset();
+});
 
 // ekrana UI yazdırma
 const listeOlustur = (newTodo) => {
@@ -79,23 +90,37 @@ const listeOlustur = (newTodo) => {
 
   console.log(li);
 
-  ulList.append(li);
+  // append vs prepend
+//   ulList.append(li) // appen yerine prepend ile en üste eklemiş oluyoruz
+  ulList.prepend(li);
 };
 
-//capturing ve bubbling
+//capturing ve bubbling ? araştıralım
 
-ulList.addEventListener("click",(e)=>{
- 
-    const secilenId=e.target.closest("li").getAttribute("id")
+ulList.addEventListener("click", (e) => {
+  const secilenId = e.target.closest("li").getAttribute("id");
 
-    console.log(secilenId);
- if (e.target.classList.contains("fa-trash")){
+  /* -------------------------------------------------------------------------- */
+  if (e.target.classList.contains("fa-trash")) {
     //Uiden silme
-    e.target.parentElement.remove()
-    todoList = todoList.filter((todo)=> todo.id !=secilenId )
- }   
+    e.target.parentElement.remove();
+    todoList = todoList.filter((todo) => todo.id != secilenId);
+  }
 
- // güncelleme
- localStorage.setItem("todoList", JSON.stringify(todoList));
+  // silindikten sonra güncelleme
+  localStorage.setItem("todoList", JSON.stringify(todoList));
+  /* -------------------------------------------------------------------------- */
 
-})
+  if (e.target.classList.contains("fa-check")) {
+    e.target.parentElement.classList.toggle("checked");
+
+    todoList.forEach((todo) => {
+      if (todo.id == secilenId) {
+        todo.completed = !todo.completed;
+        // todo.completed= todo.completed ? todo.completed=true : false
+      }
+    });
+    //completed true -false dönüşümünü sağla ve güncelle
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+  }
+});
