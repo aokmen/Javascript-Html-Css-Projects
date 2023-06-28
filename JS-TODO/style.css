@@ -1,6 +1,8 @@
-
+*{
+box-sizing: border-box;
+}
 body{
-    height: 100vh;
+    height: 90vh;
     display: grid;
     place-items: center;
     /* background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%); */
@@ -43,7 +45,10 @@ input{
     box-shadow: 3px 3px 10px rgb(0, 0, 0);
     padding-left: 10px;
     color: rgb(0, 0, 0);
-   cursor: pointer;
+    cursor: pointer;
+}
+input:hover{
+    box-shadow: 3px 3px 10px rgb(118, 111, 111);
 }
 
 button{
@@ -78,21 +83,46 @@ ul {
 }
 ul li {
     display: flex;
-    justify-content: space-between;
+    flex: 1 10 1;
+    /* justify-content: space-between; */
     align-items: center;
     padding-left: 10px;
     margin-left: 7px;
-    height: 30px;
+    min-height: 30px;
     background-color: white;
     text-align: left;
     margin: 10px 0;
-    width: 250px;
+    width: 400px;
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px #000000;
-    opacity: 0.7;
-    
-   
+    opacity: 0.7;  
 }
+
+ul li .fa-check {flex: 1;}
+ul li p {flex: 8;}
+ul li .fa-trash {flex: 1;}
+
+ul li:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+.fa-trash{
+    cursor: pointer;
+    padding-left:10px ;
+}
+.fa-check{
+    cursor: pointer;
+    padding-left:10px ;
+}
+li.checked .fa-check {
+    color: #00e676;
+  }
+  
+  li.checked p {
+    color: rgb(41, 41, 41);
+    text-decoration: line-through;
+    font-weight: normal;
+  }
 
 @keyframes gradient {
     0% {
