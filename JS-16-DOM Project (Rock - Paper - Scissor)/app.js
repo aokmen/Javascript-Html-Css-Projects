@@ -44,6 +44,11 @@ selectionArticle.addEventListener("click",(e)=>{
    
 })
 
+playAgainButton.addEventListener("click",() => {
+    modalCardSection.style.display = none
+    window.location.reload()
+})
+
 //!Function
 const createPcSelection = () =>{
     pcArr = ["rock","paper","scissor"]
