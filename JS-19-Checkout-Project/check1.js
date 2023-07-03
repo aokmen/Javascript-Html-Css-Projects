@@ -56,26 +56,12 @@ function ekranaBastir() {
   
     });
 
+
 document.querySelectorAll(".remove-ürün").forEach((btn) => {
     btn.onclick = () => {
         btn.closest(".card").remove()
     }
 })
-
-
-
-// document.querySelectorAll(".remove-ürün").forEach((btn) => {
-//     btn.onclick = () => {
-//         btn.closest(".card").remove()
-//     }
-// })
-
-      
-      
-  
-
-
-
 
 
 }
