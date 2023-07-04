@@ -60,8 +60,34 @@ function ekranaBastir() {
 document.querySelectorAll(".remove-ürün").forEach((btn) => {
     btn.onclick = () => {
         btn.closest(".card").remove()
+        sepettekiler = sepettekiler.filter((ürün) =>
+            ürün.name != btn.closest(".card").querySelector("h5").textContent.trim()
+        )
     }
 })
-
-
+    document.querySelector("#card-prices").innerHTML = `<table class="table">
+    <tbody>
+      <tr class="text-end">
+        <th class="text-start">Aratoplam</th>
+        <td>$<span class="aratoplam">0.00</span></td>
+      </tr>
+      <tr class="text-end">
+        <th class="text-start">Vergi(18%)</th>
+        <td>$<span class="vergi">0.00</span></td>
+      </tr>
+      <tr class="text-end">
+        <th class="text-start">Kargo</th>
+        <td>$<span class="kargo">0.00</span></td>
+      </tr>
+      <tr class="text-end">
+        <th class="text-start">Toplam</th>
+        <td>$<span class="toplam">0.00</span></td>
+      </tr>
+    </tbody>
+  </table>`
+}
+function adetButon() {
+    document.querySelectorAll(".adet-controller").forEach((i) => {
+        const minus = i.
+    })
 }
