@@ -10,7 +10,7 @@ const time = () => {
     hr = hr > 12 ? hr - 12 : hr
 
 
-//     ------- Add a zero in front of numbers<10
+//     ------- Add a zero in front of numbers < 10
     hr = checkTime(hr)
     min = checkTime(min)
     sec = checkTime(sec)
