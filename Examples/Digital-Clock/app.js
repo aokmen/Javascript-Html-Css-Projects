@@ -6,7 +6,6 @@ const time = () => {
     let min = today.getMinutes() 
     let sec = today.getSeconds()
     let pm = hr < 12 ? `<span> AM </span>` : `<span> PM </span>`
-    
     hr = hr > 12 ? hr - 12 : hr
 
 
