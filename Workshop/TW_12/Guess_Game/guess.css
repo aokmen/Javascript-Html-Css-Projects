@@ -17,7 +17,7 @@ span {
 }
 .col{
     padding-top: 100px;
-    width: 50%;
+    min-width: 50%;
     border: 1px solid pink;
     border-radius: 50px;
     height: 800px;
